@@ -68,4 +68,4 @@ Bu proje açık kaynaklıdır ve eğitim amaçlarıyla kullanılmak üzere tasar
 
 ## İletişim
 
-Sorularınız ve önerileriniz için lütfen iletişime geçin. 
+Sorularınız ve önerileriniz için lütfen iletişime geçin. ismailcelikbas66@gmail.com
