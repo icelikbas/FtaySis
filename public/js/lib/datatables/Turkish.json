@@ -1,0 +1,98 @@
+{
+    "sDecimal": ",",
+    "sEmptyTable": "Tabloda herhangi bir veri mevcut değil",
+    "sInfo": "_TOTAL_ kayıttan _START_ - _END_ arasındaki kayıtlar gösteriliyor",
+    "sInfoEmpty": "Kayıt yok",
+    "sInfoFiltered": "(_MAX_ kayıt içerisinden bulunan)",
+    "sInfoPostFix": "",
+    "sInfoThousands": ".",
+    "sLengthMenu": "Sayfada _MENU_ kayıt göster",
+    "sLoadingRecords": "Yükleniyor...",
+    "sProcessing": "İşleniyor...",
+    "sSearch": "Ara:",
+    "sZeroRecords": "Eşleşen kayıt bulunamadı",
+    "oPaginate": {
+        "sFirst": "İlk",
+        "sLast": "Son",
+        "sNext": "Sonraki",
+        "sPrevious": "Önceki"
+    },
+    "oAria": {
+        "sSortAscending": ": artan sütun sıralamasını aktifleştir",
+        "sSortDescending": ": azalan sütun sıralamasını aktifleştir"
+    },
+    "select": {
+        "rows": {
+            "_": "%d kayıt seçildi",
+            "0": "",
+            "1": "1 kayıt seçildi"
+        }
+    },
+    "buttons": {
+        "copyTitle": "Panoya kopyalandı",
+        "copySuccess": {
+            "_": "%d satır panoya kopyalandı",
+            "1": "1 satır panoya kopyalandı"
+        },
+        "copy": "Kopyala",
+        "print": "Yazdır",
+        "excel": "Excel",
+        "csv": "CSV",
+        "pdf": "PDF",
+        "colvis": "Sütunlar",
+        "colvisRestore": "Görünürlüğü sıfırla"
+    },
+    "searchBuilder": {
+        "add": "Koşul Ekle",
+        "button": {
+            "0": "Arama Oluşturucu",
+            "_": "Arama Oluşturucu (%d)"
+        },
+        "clearAll": "Hepsini Temizle",
+        "condition": "Koşul",
+        "conditions": {
+            "date": {
+                "after": "Sonra",
+                "before": "Önce",
+                "between": "Arasında",
+                "empty": "Boş",
+                "equals": "Eşittir",
+                "not": "Değildir",
+                "notBetween": "Dışında",
+                "notEmpty": "Dolu"
+            },
+            "number": {
+                "between": "Arasında",
+                "empty": "Boş",
+                "equals": "Eşittir",
+                "gt": "Büyüktür",
+                "gte": "Büyük eşittir",
+                "lt": "Küçüktür",
+                "lte": "Küçük eşittir",
+                "not": "Değildir",
+                "notBetween": "Dışında",
+                "notEmpty": "Dolu"
+            },
+            "string": {
+                "contains": "İçerir",
+                "empty": "Boş",
+                "endsWith": "İle biter",
+                "equals": "Eşittir",
+                "not": "Değildir",
+                "notEmpty": "Dolu",
+                "startsWith": "İle başlar"
+            }
+        },
+        "data": "Veri",
+        "deleteTitle": "Filtreleme kuralını silin",
+        "leftTitle": "Kriteri dışarı çıkart",
+        "logicAnd": "ve",
+        "logicOr": "veya",
+        "rightTitle": "Kriteri içeri al",
+        "title": {
+            "0": "Arama Oluşturucu",
+            "_": "Arama Oluşturucu (%d)"
+        },
+        "value": "Değer"
+    }
+} 

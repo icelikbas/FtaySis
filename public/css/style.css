@@ -1,0 +1,1255 @@
+/* Genel Stiller */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fc;
+    color: #333;
+    padding-bottom: 60px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #dee2e6;
+    z-index: 100;
+}
+
+/* Navbar */
+.top-navbar {
+    background-color: #4e73df;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    padding: 0.5rem 1rem;
+}
+
+.top-navbar .navbar-brand {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.top-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1rem;
+    transition: all 0.2s;
+}
+
+.top-navbar .nav-link:hover {
+    color: #fff;
+}
+
+.top-navbar .dropdown-menu {
+    border: none;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+/* Bootstrap 5 dropdown özel düzenlemeler */
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+/* Mobil görünümde dropdown için düzenlemeler */
+@media (max-width: 991.98px) {
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .navbar-nav .dropdown-menu .dropdown-item {
+        color: rgba(255, 255, 255, 0.8);
+        padding: 0.5rem 1rem 0.5rem 2rem;
+    }
+    
+    .navbar-nav .dropdown-menu .dropdown-item:hover {
+        color: #fff;
+        background-color: transparent;
+    }
+    
+    .navbar-nav .dropdown-menu .dropdown-divider {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+/* Ana İçerik Alanı */
+.main-content {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+main {
+    padding-top: 20px;
+    margin-bottom: 60px;
+    min-height: calc(100vh - 70px);
+}
+
+/* Kartlar */
+.card {
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 0.35rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+}
+
+.card-header {
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    overflow-y: auto;
+    height: calc(100vh - 116px);
+    background-color: #2d3748;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.sidebar .position-sticky {
+    top: 0;
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+    padding: 0.75rem 1rem;
+}
+
+.sidebar .nav-link:hover {
+    color: #007bff;
+}
+
+.sidebar .nav-link.active {
+    color: #007bff;
+}
+
+.sidebar-heading {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+
+/* Tablolar */
+
+.table {
+    margin-bottom: 0;
+    color: #5a5c69;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #e3e6f0;
+    background-color: #f8f9fc;
+    font-weight: 700;
+    color: #4e73df;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+    border-top: 1px solid #e3e6f0;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(78, 115, 223, 0.05);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table-bordered {
+    border: 1px solid #e3e6f0;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #e3e6f0;
+}
+
+
+/* DataTables */
+
+.dataTables_wrapper {
+    padding: 0;
+    margin-bottom: 1rem;
+    width: 100% !important;
+}
+
+.dataTables_info {
+    padding-top: 0.85em;
+    font-size: 0.875rem;
+    color: #858796;
+}
+
+.dataTables_paginate {
+    padding-top: 0.5em;
+}
+
+.dataTables_paginate .paginate_button {
+    padding: 0.25rem 0.5rem;
+    margin-left: 2px;
+    border-radius: 0.25rem;
+}
+
+.dataTables_paginate .paginate_button.current,
+.dataTables_paginate .paginate_button.current:hover {
+    background: #4e73df !important;
+    border-color: #4e73df !important;
+    color: #fff !important;
+}
+
+.dataTables_paginate .paginate_button:hover {
+    background: #eaecf4 !important;
+    border-color: #eaecf4 !important;
+    color: #4e73df !important;
+}
+
+.dataTables_length select {
+    width: auto;
+    display: inline-block;
+}
+
+.dataTables_filter {
+    text-align: right;
+}
+
+.dataTables_filter input {
+    margin-left: 0.5em;
+    display: inline-block;
+    width: auto;
+}
+
+
+/* DataTable butonları */
+
+.dt-buttons {
+    margin-bottom: 0.5rem;
+}
+
+.dt-buttons .btn {
+    margin-right: 0.25rem;
+}
+
+.dt-buttons .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.2rem;
+}
+
+.dt-button-collection {
+    padding: 0.5rem;
+}
+
+
+/* DataTable kaydırma */
+
+.dataTables_scrollHead,
+.dataTables_scrollBody {
+    width: 100% !important;
+}
+
+.dataTables_scrollHeadInner {
+    width: 100% !important;
+}
+
+.dataTables_scrollHeadInner table {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+
+/* Duyarlı DataTable */
+
+@media (max-width: 767.98px) {
+    div.dataTables_wrapper div.dataTables_length,
+    div.dataTables_wrapper div.dataTables_filter,
+    div.dataTables_wrapper div.dataTables_info,
+    div.dataTables_wrapper div.dataTables_paginate {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+        justify-content: center !important;
+    }
+    .dt-buttons {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* Badge stilleri */
+
+.badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 75%;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+
+.badge-primary {
+    background-color: #4e73df;
+    color: #fff;
+}
+
+.badge-success {
+    background-color: #1cc88a;
+    color: #fff;
+}
+
+.badge-info {
+    background-color: #36b9cc;
+    color: #fff;
+}
+
+.badge-warning {
+    background-color: #f6c23e;
+    color: #212529;
+}
+
+.badge-danger {
+    background-color: #e74a3b;
+    color: #fff;
+}
+
+.badge-secondary {
+    background-color: #858796;
+    color: #fff;
+}
+
+.badge-dark {
+    background-color: #5a5c69;
+    color: #fff;
+}
+
+.badge-light {
+    background-color: #f8f9fc;
+    color: #3a3b45;
+}
+
+.badge-pill {
+    border-radius: 10rem;
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:focus,
+.btn:hover {
+    text-decoration: none;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+
+/* Düğme grupları için genel stiller */
+
+.btn-group {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    border-radius: 0.25rem;
+    overflow: visible;
+}
+
+.btn-group .btn {
+    position: relative;
+    flex: 1 1 auto;
+    border-radius: 0.25rem;
+    margin: 0 1px;
+}
+
+.btn-group .btn:not(:last-child) {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-group .btn i {
+    width: 14px;
+    text-align: center;
+}
+
+
+/* Table içindeki btn-group özel stilleri */
+
+table .btn-group {
+    display: inline-flex;
+    justify-content: center;
+    width: auto;
+    min-width: 120px;
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+table .btn-group .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    margin: 0 2px;
+}
+
+table .btn-group .btn:first-child {
+    margin-left: 0;
+}
+
+table .btn-group .btn:last-child {
+    margin-right: 0;
+    border-right: none;
+}
+
+table .btn-group form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+table .btn-group form button {
+    border-radius: 0.25rem;
+    margin: 0 2px;
+}
+
+table .btn-group form:last-child button {
+    margin-right: 0;
+}
+
+
+/* Form stiller */
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6e707e;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d1d3e2;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #6e707e;
+    background-color: #fff;
+    border-color: #bac8f3;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-group-prepend {
+    margin-right: -1px;
+    display: flex;
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6e707e;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #eaecf4;
+    border: 1px solid #d1d3e2;
+    border-radius: 0.25rem;
+}
+
+
+/* Yeni Giriş Sayfası Stilleri */
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e5799, #207cca);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.login-logo-container {
+    padding: 40px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.company-logo-placeholder {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid #eaeaea;
+    text-align: center;
+}
+
+.company-logo-placeholder:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-color: #207cca;
+}
+
+.company-logo-placeholder i {
+    font-size: 55px;
+    color: #1e5799;
+    margin-bottom: 10px;
+}
+
+.company-logo-placeholder .company-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e5799;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.company-logo-placeholder p {
+    font-size: 12px;
+    color: #555;
+    margin: 0;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+}
+
+.login-card {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.login-header h3 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+}
+
+.login-header p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.login-form .form-group {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.login-form .input-group {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+
+.login-form .input-group:focus-within {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .input-group-text {
+    background-color: #f8f9fa;
+    border-right: none;
+    color: #1e5799;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.login-form .form-control {
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    height: 48px;
+    font-size: 1rem;
+    padding-left: 15px;
+}
+
+.login-form .form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+.login-form .form-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-left: 5px;
+    gap: 20px;
+}
+
+.login-form .remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.login-form .form-check-input {
+    margin-top: 0.25rem;
+}
+
+.login-form .form-check-label {
+    margin-left: 5px;
+    color: #555;
+}
+
+.login-form .forgot-password {
+    color: #1e5799;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-form .forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-form .login-btn {
+    background: linear-gradient(to right, #1e5799, #207cca);
+    border: none;
+    height: 48px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(30, 87, 153, 0.2);
+}
+
+.login-form .login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(30, 87, 153, 0.3);
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    width: 100%;
+}
+
+.login-footer .footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-footer p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.login-footer .copyright {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.login-footer a {
+    color: #1e5799;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 80%;
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+/* Responsive Tasarım için Medya Sorguları */
+
+@media (min-width: 768px) {
+    .login-form-container {
+        flex-direction: row;
+    }
+    .login-logo-container {
+        width: 40%;
+        border-right: 1px solid #eaeaea;
+        border-bottom: none;
+        min-height: 100%;
+    }
+    .login-card {
+        width: 60%;
+    }
+    .login-wrapper {
+        height: auto;
+        max-height: 90vh;
+        margin: 0 auto;
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 767px) {
+    .login-wrapper {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .company-logo-placeholder {
+        width: 120px;
+        height: 120px;
+    }
+    .company-logo-placeholder i {
+        font-size: 45px;
+    }
+    .login-header h3 {
+        font-size: 1.5rem;
+    }
+    .login-card,
+    .login-logo-container {
+        padding: 30px;
+    }
+    .login-form .form-check {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 10px;
+    }
+    .login-wrapper {
+        margin: 10px;
+    }
+    .login-card,
+    .login-logo-container {
+        padding: 20px;
+    }
+    .company-logo-placeholder {
+        width: 100px;
+        height: 100px;
+    }
+    .company-logo-placeholder i {
+        font-size: 40px;
+    }
+    .login-form .form-check {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .login-form .forgot-password {
+        margin-top: 10px;
+    }
+    .login-header {
+        margin-bottom: 25px;
+    }
+}
+
+
+/* Dashboard İstatistik Kartları */
+
+.stat-card {
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card-primary {
+    background: linear-gradient(to right, #4e73df, #224abe);
+    color: #fff;
+}
+
+.stat-card-success {
+    background: linear-gradient(to right, #1cc88a, #13855c);
+    color: #fff;
+}
+
+.stat-card-info {
+    background: linear-gradient(to right, #36b9cc, #258391);
+    color: #fff;
+}
+
+.stat-card-warning {
+    background: linear-gradient(to right, #f6c23e, #dda20a);
+    color: #fff;
+}
+
+.stat-card .card-icon {
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.stat-card .stat-number {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+
+/* Karşılama Sayfası */
+
+.welcome-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #4e73df, #224abe);
+    color: white;
+}
+
+.welcome-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.welcome-logo {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.welcome-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.welcome-btn {
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.welcome-btn:hover {
+    transform: scale(1.05);
+}
+
+
+/* DataTables Genişlik Düzeltmeleri */
+
+table.dataTable {
+    width: 100% !important;
+    margin-bottom: 20px !important;
+}
+
+.table-responsive {
+    width: 100% !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+
+/* DataTables Butonlar */
+
+.dt-buttons {
+    margin-bottom: 15px;
+}
+
+.dt-button {
+    margin-right: 5px !important;
+}
+
+
+/* DataTables Arama Kutusu */
+
+.dataTables_filter {
+    margin-bottom: 15px;
+}
+
+
+/* DataTables Bilgi ve Sayfalama */
+
+.dataTables_info,
+.dataTables_paginate {
+    margin-top: 10px;
+}
+
+
+/* Sayfalama butonları */
+
+.pagination .page-link {
+    min-width: 36px;
+    text-align: center;
+}
+
+
+/* Hover düzeltmeleri */
+
+table.dataTable tbody tr:hover {
+    background-color: rgba(78, 115, 223, 0.05);
+}
+
+
+/* Tablo hücre ayarları */
+
+.table th {
+    font-weight: 600;
+    vertical-align: middle !important;
+}
+
+.table td {
+    vertical-align: middle !important;
+}
+
+
+/* Mobil düzeltmeler */
+
+@media (max-width: 767.98px) {
+    .dataTables_wrapper .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    div.dataTables_wrapper div.dataTables_length,
+    div.dataTables_wrapper div.dataTables_filter,
+    div.dataTables_wrapper div.dataTables_info,
+    div.dataTables_wrapper div.dataTables_paginate {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .table-responsive {
+        padding: 0;
+    }
+}
+
+/* DataTables Bootstrap 5 Uyumluluk Düzeltmeleri */
+
+/* DataTables filtre ve arama kutucukları */
+div.dataTables_wrapper div.dataTables_length label {
+    margin-bottom: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    width: auto;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: right;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+    margin-bottom: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 5px;
+    display: inline-block;
+    width: auto;
+}
+
+/* DataTables Button Düzeltmeleri */
+div.dt-buttons {
+    position: relative;
+    float: left;
+    margin-bottom: 15px;
+}
+
+div.dt-buttons .btn {
+    margin-right: 3px;
+}
+
+div.dt-buttons .btn-group {
+    margin-right: 3px;
+}
+
+.dt-button-collection {
+    position: absolute !important;
+    margin-top: 3px !important;
+    z-index: 2002 !important;
+    border-radius: 4px !important;
+    width: auto !important;
+    background-color: white !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.dt-button-collection .dt-button {
+    min-width: 200px;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+}
+
+.dt-button-collection .dt-button:hover {
+    background-color: #f8f9fa;
+}
+
+.dt-button-collection .dt-button.active {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+/* DataTables Responsive Fix */
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    background-color: #4e73df;
+    box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.15);
+}
+
+/* Styling the tables */
+table.dataTable {
+    width: 100% !important;
+    margin-bottom: 20px !important;
+    clear: both;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* Fix vertical align issues in table cells */
+.table th, .table td {
+    vertical-align: middle !important;
+    padding: 0.75rem;
+}
+
+/* Fix pagination alignments */
+div.dataTables_wrapper div.dataTables_paginate {
+    margin: 0;
+    white-space: nowrap;
+    text-align: right;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    margin: 2px 0;
+    white-space: nowrap;
+    justify-content: flex-end;
+}
+
+/* Fix search box and other controls for mobile */
+@media screen and (max-width: 767px) {
+    div.dataTables_wrapper div.dataTables_length,
+    div.dataTables_wrapper div.dataTables_filter,
+    div.dataTables_wrapper div.dataTables_info,
+    div.dataTables_wrapper div.dataTables_paginate {
+        text-align: center;
+    }
+    
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+        justify-content: center !important;
+    }
+    
+    div.dt-buttons {
+        float: none;
+        text-align: center;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .dt-buttons .btn {
+        flex: 1;
+        padding: 0.375rem 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Şirket Kartları Stilleri */
+.company-card {
+    transition: all 0.3s ease;
+    border-width: 2px;
+    overflow: hidden;
+}
+
+.company-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06) !important;
+}
+
+.company-card .card-img-top {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f8f9fb;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.company-logo-img {
+    max-height: 80px !important;
+    max-width: 160px !important;
+    transition: transform 0.3s ease;
+}
+
+.company-card:hover .company-logo-img {
+    transform: scale(1.05);
+}
+
+.company-logo-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.company-card:hover .company-logo-placeholder {
+    background-color: #e9ecef;
+    transform: scale(1.05);
+}
+
+/* İstatistik kutuları */
+.company-card .shadow-sm {
+    transition: all 0.2s ease;
+}
+
+.company-card:hover .shadow-sm {
+    box-shadow: 0 .25rem .5rem rgba(0,0,0,.15) !important;
+}
+
+/* Geçiş efekti için yardımcı sınıf */
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
