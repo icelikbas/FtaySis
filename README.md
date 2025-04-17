@@ -1,4 +1,4 @@
-# Filo Takip Sistemi
+# Filo Takip Yönetim Sistemi
 
 Filo Takip Sistemi, işletmelerin araç filolarını etkin bir şekilde yönetmelerine olanak tanıyan MVC tabanlı bir PHP uygulamasıdır.
 
